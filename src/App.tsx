@@ -8,7 +8,10 @@ const todos: Array<Todo> = [
 
 const App: React.FC = () => {
   return (
-    <TodoListItem todo={todos[0]}/>
+    <React.Fragment>
+      <TodoListItem todo={todos[0]}/>
+      <TodoListItem todo={todos[1]} />
+    </React.Fragment>
   );
 }
 
