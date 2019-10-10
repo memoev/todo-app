@@ -1,10 +1,6 @@
 import React from 'react';
 import { TodoListItem } from './TodoListItem'
-
-type Todo = {
-  text: string;
-  complete: boolean;
-}
+import { Todo } from './types'
 
 const todos: Array<Todo> = [
   {text: "Learn Typescript", complete: false}, 
