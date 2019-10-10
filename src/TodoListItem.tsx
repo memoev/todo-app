@@ -6,7 +6,8 @@ interface TodoListItemProps {
 
 export const TodoListItem: React.FunctionComponent<TodoListItemProps> = ({ todo }) => {
     return <li>
-        <label>
+        {/* Here we add style to the element so it can be crossed if complete is true */}
+        <label style={{textDecoration: todo.complete ? "line-through": "none"}}> 
             <input type="checkbox" checked={todo.complete}/>
             {todo.text}
         </label>
