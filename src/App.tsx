@@ -24,8 +24,6 @@ const App: React.FC = () => {
   };
 
   const addTodo: AddTodo = newTodo => {
-    const elementPlaceholder = { text: newTodo, complete: false };
-    initialTodos.push(elementPlaceholder);
     newTodo.trim() !== "" &&
       setTodos([...todos, elementPlaceholder]);
   }
